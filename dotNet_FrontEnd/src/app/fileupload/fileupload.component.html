@@ -1,0 +1,9 @@
+<div style="margin-top : 3%">
+  <p style="margin-left : 3%"><b>Upload a .cpp file and a template file:</b></p>
+
+  <div class="container">
+    <input type="file" (change)="onFileSelected($event)" /><br />
+    <input type="file" (change)="onTemplateFileSelected($event)" /><br /><br />
+    <input type="button" value="upload" (click)="onUpload()" />
+  </div>
+</div>

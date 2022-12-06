@@ -1,0 +1,15 @@
+
+<p *ngIf="!output"> Can't get files from server... </p>
+
+<div class = "container" *ngIf="output">
+  <p><b>Files are equal: {{ output.result }}</b></p>
+
+  <div class="fileOutput">
+    <b>Cpp file output:</b><br /><br />
+    {{ output.file1 }}
+  </div>
+  <div class="fileOutput">
+    <b>Template file:</b><br /><br />
+    {{ output.file2 }}
+  </div>
+</div>

@@ -1,0 +1,12 @@
+
+<form #personForm="ngForm" (ngSubmit)="onSubmit(personForm.value)">
+
+  <label> First name: </label> <br />
+  <input type="text" name="firstName" ngModel /> <br />
+
+  <label> Last name: </label> <br />
+  <input type="text" name="lastName" ngModel /> <br />
+
+  <input type="submit" value="Send!" />
+
+</form>
